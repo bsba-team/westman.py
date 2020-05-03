@@ -1,4 +1,10 @@
-import telebot
+import pip._internal as packager
+
+try:
+    import telebot
+except ImportError:
+    packager.main(['install', 'pyTelegramBotAPI'])
+    pass
 import config
 import logging
 import time
