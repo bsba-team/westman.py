@@ -1,10 +1,5 @@
 import os
-import pip
-
-try:
-    import dotenv
-except ImportError:
-    pip.main(['install', 'python-dotenv'])
+import dotenv
 
 ##################
 PRODUCTION = True
