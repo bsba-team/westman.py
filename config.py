@@ -1,6 +1,10 @@
 import os
-import dotenv
+import pip as packager
 
+try:
+    import dotenv
+except ImportError:
+    packager.main(['install', 'python-dotenv'])
 ##################
 PRODUCTION = True
 ##################
