@@ -1,16 +1,19 @@
-import pip._internal as packager
+import pip as packager
 
 try:
     import telebot
 except ImportError:
     packager.main(['install', 'pyTelegramBotAPI'])
+
+try:
+    from flask import Flask, request
+except ImportError:
+    packager.main(['install', 'flask'])
+
 import config
 import logging
 import time
 import os
-
-
-from flask import Flask, request
 
 
 bot = telebot.TeleBot(config.TOKEN)
