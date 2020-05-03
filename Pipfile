@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+certifi = "==2020.4.5.1"
 
 [requires]
 python_version = "3.8"
