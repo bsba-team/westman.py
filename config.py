@@ -1,9 +1,10 @@
 import os
 import dotenv
 
-##################
-PRODUCTION = False
-##################
+dotenv.load_dotenv()
+TOKEN = os.environ.get('TOKEN')
+CONFESSION = os.environ.get('CONFESSION')
+APPLICATION = os.environ.get('APPLICATION')
 
 PERSON = [
     "Westman",
@@ -19,13 +20,3 @@ DIALOG = [
     "disclosed",
     "announced"
 ]
-
-# if PRODUCTION is True:
-#     TOKEN = os.environ['TOKEN']
-#     CONFESSION = os.environ['CONFESSION']
-#     APPLICATION = os.environ['APPLICATION']
-# else:
-dotenv.load_dotenv()
-TOKEN = os.environ.get('TOKEN')
-CONFESSION = os.environ.get('CONFESSION')
-APPLICATION = os.environ.get('APPLICATION')
