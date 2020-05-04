@@ -17,7 +17,7 @@ def localhost():
     logger.setLevel(logging.DEBUG)
     while True:
         try:
-            bot.polling(none_stop=True, interval=0, timeout=0)
+            bot.polling(none_stop=True)
         except:
             time.sleep(10)
         pass
