@@ -20,12 +20,11 @@ DIALOG = [
     "announced"
 ]
 
-if PRODUCTION is True:
-    TOKEN = os.environ['TOKEN']
-    CONFESSION = os.environ['CONFESSION']
-    APPLICATION = os.environ['APPLICATION']
-
-else:
+# if PRODUCTION is True:
+#     TOKEN = os.environ['TOKEN']
+#     CONFESSION = os.environ['CONFESSION']
+#     APPLICATION = os.environ['APPLICATION']
+# else:
     dotenv.load_dotenv()
     TOKEN = os.environ.get('TOKEN')
     CONFESSION = os.environ.get('CONFESSION')

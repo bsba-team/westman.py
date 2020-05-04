@@ -1,1 +1,1 @@
-web: pip install --upgrade pip && pip3 install flask && pip3 install pytelegrambotapi && pip3 install python-dotenv && python3 main.py
+web: pip install --upgrade pip && pip3 install pytelegrambotapi && pip3 install python-dotenv && python3 main.py
