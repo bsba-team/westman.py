@@ -2,7 +2,7 @@ import os
 import dotenv
 
 ##################
-PRODUCTION = True
+PRODUCTION = False
 ##################
 
 PERSON = [
