@@ -25,7 +25,7 @@ DIALOG = [
 #     CONFESSION = os.environ['CONFESSION']
 #     APPLICATION = os.environ['APPLICATION']
 # else:
-    dotenv.load_dotenv()
-    TOKEN = os.environ.get('TOKEN')
-    CONFESSION = os.environ.get('CONFESSION')
-    APPLICATION = os.environ.get('APPLICATION')
+dotenv.load_dotenv()
+TOKEN = os.environ.get('TOKEN')
+CONFESSION = os.environ.get('CONFESSION')
+APPLICATION = os.environ.get('APPLICATION')
