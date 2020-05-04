@@ -12,8 +12,8 @@ def localhost():
     logger.setLevel(logging.DEBUG)
     while True:
         try:
-            bot.infinity_polling(True)
-        except:
+            bot.polling(none_stop=True)
+        except ConnectionRefusedError:
             time.sleep(10)
         pass
     pass
