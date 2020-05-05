@@ -1,7 +1,7 @@
 from .message import _message
 from .photo import _photo
 from .video import _video
-from .music import _music
+from .audio import _audio
 from .document import _document
 
 
@@ -9,6 +9,6 @@ def init():
     _message()
     _photo()
     _video()
-    _music()
+    _audio()
     _document()
     pass

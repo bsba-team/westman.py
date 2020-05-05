@@ -20,3 +20,9 @@ DIALOG = [
     "disclosed",
     "announced"
 ]
+
+
+CONTENT = [
+    "wanted to share that",
+    "wanted to show that"
+]
