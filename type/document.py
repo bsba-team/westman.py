@@ -9,7 +9,12 @@ def _document():
     def __document(message):
         bot.reply_to(message, "<b>Document Received</b>", parse_mode='HTML')
         content = f"<b>{random.choice(PERSON)} {random.choice(CONTENT)}.</b>"
-        bot.forward_message(CONFESSION, message.from_user.id, message.message_id)
+        bot.send_document(
+            chat_id=CONFESSION,
+            data=message.document.file_id,
+            caption=content,
+            parse_mode='HTML',
+        )
         reply = "<b>Document has been sent to the confession! Check the channel</b>"
         bot.reply_to(message, reply, parse_mode='HTML')
         pass
