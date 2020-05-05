@@ -4,7 +4,7 @@ import logging
 import time
 
 
-bot = telebot.TeleBot(config.TOKEN, threaded=True)
+bot = telebot.TeleBot(config.TOKEN)
 logger = telebot.logger
 
 
