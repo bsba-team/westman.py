@@ -26,3 +26,8 @@ CONTENT = [
     "wanted to share that",
     "wanted to show that"
 ]
+
+OFFENSIVE = [
+    "suka",
+    "blyat"
+]
