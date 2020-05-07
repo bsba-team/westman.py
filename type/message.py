@@ -1,9 +1,9 @@
-import random
 import re
 
 from core import bot
 from better_profanity import profanity
-from config import CONFESSION, DIALOG, PERSON, OFFENSIVE
+from config import CONFESSION, OFFENSIVE
+
 
 def cleaner(string):
     for badword in OFFENSIVE:
@@ -20,8 +20,7 @@ def _message():
         censored = cleaner(profanity.censor(message.text))
         result = re.sub(url_pattern, '', censored)
         content = \
-            f"#{message.message_id} \n" \
-            f"<b>{random.choice(PERSON)} {random.choice(DIALOG)}:</b> <i>" + result + "</i>"
+            f"#{message.message_id}: <i>" + result + "</i>"
         bot.send_message(CONFESSION, content, parse_mode='HTML')
         pass
     pass
