@@ -4,7 +4,6 @@ import dotenv
 dotenv.load_dotenv()
 TOKEN = os.environ.get('TOKEN')
 CONFESSION = os.environ.get('CONFESSION')
-APPLICATION = os.environ.get('APPLICATION')
 
 PERSON = [
     "Westman",
