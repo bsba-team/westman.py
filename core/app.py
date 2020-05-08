@@ -14,12 +14,11 @@ WEBHOOK_URL_PATH = "/%s/" % API_TOKEN
 
 
 bot = telebot.TeleBot(config.TOKEN)
-logger = telebot.logger.setLevel(logging.INFO)
 app = flask.Flask(__name__)
 
 
 def host():
-    logger()
+    telebot.logger.setLevel(logging.INFO)
 
     @app.route('/', methods=['GET', 'HEAD'])
     def index():
