@@ -13,7 +13,7 @@ WEBHOOK_URL_BASE = "https://%s:%s" % (WEBHOOK_HOST, WEBHOOK_PORT)
 WEBHOOK_URL_PATH = "/%s/" % API_TOKEN
 
 
-bot = telebot.TeleBot()
+bot = telebot.TeleBot(config.TOKEN)
 logger = telebot.logger.setLevel(logging.INFO)
 app = flask.Flask(__name__)
 
