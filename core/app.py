@@ -13,7 +13,7 @@ WEBHOOK_SSL_CERT = './webhook_cert.pem'  # Путь к сертификату
 WEBHOOK_SSL_PRIV = './webhook_pkey.pem'  # Путь к приватному ключу
 
 WEBHOOK_URL_BASE = "https://%s:%s" % (WEBHOOK_HOST, WEBHOOK_PORT)
-WEBHOOK_URL_PATH = "/%s/" % (config.TOKEN)
+WEBHOOK_URL_PATH = "/%s/" % config.TOKEN
 
 
 bot = telebot.TeleBot(config.TOKEN)
